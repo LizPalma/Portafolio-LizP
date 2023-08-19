@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz Palma</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href='/html/formulario.html'>
+
+</head>
+<body >
+ <!-- menu--> 
+    <header>
+  
+        <img class="logo" src="/img/imagenes/log.png"  alt="Logo">
+        <button id="abrir" class="abrir-menu"> <i class="fi fi-br-menu-burger"></i></button> 
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"> <i class="fi fi-br-cross"></i></button>
+            <ul class="nav-list">
+                <li> <a href="#inicio">INICIO </a></li>
+                <li> <a href="#contacto">CONTACTO</a></li>
+                <li> <a href="#sobre-mi">SOBRE MI</a></li>       
+                <li> <a href="https://www.youtube.com/@lofidreams26" target="_blank">
+                 <img src="/img/iconos/youtube.png" alt="musica">🎶</a></li>
+            </ul>
+        </nav>
+   
+    </header>
+
+<main>
+    
+ 
+<!--Inicio -->
+
+    <section id="inicio">
+
+        <figure>
+            <img src="/img/imagenes/PerfilLiz.png" alt="imagen Liz" width="375">
+        </figure>
+
+        <article class="encabezado ">
+            <h1>Hola! Soy Liz </h1>
+        
+        <p class="centrado">Mi objetivo es ayudar a aliviar la carga de trabajo de mis clientes y permitirles trabajar en las tareas
+             principales de su negocio. 
+            Estoy altamente motivada, soy organizada y capaz de trabajar de manera independiente y en equipo.</p>
+        <button class="descarga-cv">
+            <a href="/cv/communitymanager.pdf" download="Cv🤍">Descarga mi Cv🤍</a>
+        </button>
+    </article>    
+    
+    </section>
+<br> <br> <br>
+<!--Sobre mi-->    
+
+    <section id="sobre-mi">
+
+        <h2> Sobre mi </h2>
+
+        <article class="experiencia "> 
+            <p><strong> Experiencias Laborales</strong></p>
+            <p> 🛒 Ventas </p>
+            <p> 💻 E-commerse </p>
+            <p> 📂 Administrativo</p>
+         </article>
+
+        <article class="experiencia">
+            <p> <strong> Habilidades y aptitudes</strong></p>
+            <p> <strong>Ofimática básica:</strong> 
+                
+                Powtoon®. Canva®. Office®,
+               Chrome®. Prezi®, G-suite® 
+               <strong>Gestion de agendas:</strong>
+               G-suite®. Trello®. Asana®. 
+             <strong>CRM: </strong>
+               Cianbox® Tango gestión® </p>
+         </article>
+        <article class="experiencia ">
+            <p> <strong>Hoobies</strong></p>
+            <p> Pasar tiempo con mi mascota,
+                patinar, practicar idiomas.
+            </p>
+            
+             </article>
+
+    </section>
+    
+   
+<!-- Contacto -->
+
+     <section id="contacto">
+
+        <article class="centrado" >
+            <h3>Hablemos!</h3>
+            <p>Estoy segura de que mi experiencia y habilidades serán un activo valioso para cualquier empresa
+               o individuo que busque un asistente virtual confiable y eficiente. Te dejo algunos canales de contacto:</p>
+        </article>
+
+    </section>
+
+    <section  class="iconos">
+        <ul>
+            <li> <a href="mailto:lgpalma15@gmail.com" target="_blank"> <img src="/img/iconos/mail.png" alt="mail" width="50px"></li>
+            <li> <a href="https://github.com/" target="_blank"><img src="/img/iconos/github.png" alt="gibhuh" width="50px"></a> </li>
+            <li> <a href="https://www.linkedin.com/feed/" target="_blank"><img src="/img/iconos/linkedin.png" alt="linkedin" width="50px"></li>
+        </ul>
+
+    </section>
+
+    
+</main>
+<!-- footer -->
+
+<footer>
+       
+    <a href="#" > <img src="/img/iconos/registrado.png" alt="resgistrado" width="15px"> 2023 Liz Palma</a>
+    <p> Portafolio 💻</p>
+    <a href="/html/formulario.html" class="formulario" target="_blank"> <strong>Consulta aqui tus dudas </strong> </a>
+ 
+</footer>
+<!--javascript-->
+    <!-- header -->
+    <script type="text/javascript">
+        window.addEventListener("scroll", function (){
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+     </script>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

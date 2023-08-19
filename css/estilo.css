@@ -1,0 +1,347 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+}
+/* Fonts */
+
+body {
+    height: 350vh;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        url(/img/imagenes/banner2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;    
+    background-size: cover;    
+    
+    font-family: 'Lato', sans-serif;
+    color: #0f0f0f;
+    font-size: 18px;
+    line-height: 1.2; 
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+   /* background-color: #e3d9eb;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header.abajo {
+    background-color: rgba(55, 48, 58, 0.5);
+    padding: 15px 20px;
+}
+.nav-list {
+    display: flex;
+    gap: 1rem;
+}
+nav a:hover{
+    color: #9e8fa1;
+    background-color: #353039;
+    border-radius: 15px;
+    padding: 8px;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.logo {
+    max-width: 6rem;
+}
+ 
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+/* Inicio */
+
+.centrado {
+    margin: 20px 15px;
+}
+
+.encabezado {
+    background-color: #e3d9eb;
+    padding: 20px 10px;
+    border-radius: 40px;
+}
+figure {
+    align-items: center;
+    margin-bottom: 25px;
+}
+figure img {
+    padding: 100px 0 ;
+    width: 325px;
+    border-radius: 50%;
+}
+
+/*tipografia */
+
+h1 {
+    font-size: 25px;
+}
+
+h3, h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+    margin: 2px;
+}
+
+
+/* boton de cv */
+
+.descarga-cv {
+    display: inline-flex;
+    justify-content: center;
+    padding: 12px 10px;
+    background-color: #78567e;
+    color: #fbfbfb;
+    font-size: 20px;
+    margin: 10px 30px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.descarga-cv a:hover {
+    background-color: #a390aa;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+/* Sobre mi*/
+
+#sobre-mi {
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px ;
+    background-color: #78567e;
+    border-radius: 25px;
+}
+
+.experiencia {
+    background-color: #e3d9eb;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+/* Contacto */
+
+#contacto {    
+    background-color: #e3d9eb;
+    border-radius: 15px;
+    margin: 40px 20px;
+}
+
+.iconos ul {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 60px;
+}
+
+.iconos ul li img {
+   margin: 20px 25px;
+   background-color: #d3c0d6;
+}
+
+/* Footer */
+
+footer {
+    background-color: #78567e;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    width: 100%;
+}
+strong:hover {
+    color: #c3aec7;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 550px) {
+    .experiencia p {
+        flex-direction: row;
+        background-color: #e3d9eb;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    main {
+        padding: 20px 25px ;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #866a8a;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(55, 34, 67, 0.5);
+
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+/* tablet  */
+
+@media (min-width:720px) {
+    p, a{
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2, h3 {
+        font-size: 25px;
+    }
+
+    img.logo {
+        width: 150px;
+    }
+    
+    main {
+        padding: 20px 25px;
+    }
+    .experiencia{
+        padding: 10px;
+    }
+    .centrado{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    footer {
+        text-align: center;
+        padding: 40px;
+        font-size: 25px;
+    }
+    
+}
+
+/* Desktop */
+
+@media (min-width:1024px) {
+   
+    section#inicio {
+        display: flex;
+        padding: 100px 20px;
+    }
+
+    img.logo {
+        width: 200px;
+    }
+
+    main {
+        padding: 50px 25px;
+    }
+
+    #sobre-mi {
+        display: flex;
+        justify-content: center;
+        padding: 0px 10px 30px 10px ;
+    } 
+    
+    .encabezado {
+        padding: 80px 10px;
+    }
+    .descarga-cv {
+        display: inline-flex;
+        justify-content: center;
+        padding: 12px 10px;
+        background-color: #78567e;
+        color: #fbfbfb;
+        font-size: 20px;
+        margin: 10px 0px 50px 0 ;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        transition: .3s ease all;
+    }
+    
+    p, a{
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2, h3 {
+        font-size: 32px;
+    }
+   #nav.nav {
+        padding: 20px;
+    }
+    #nav.nav li a {
+        font-size: large;
+    }
+    footer {
+        text-align: center;
+        padding: 40px;
+        font-size: 25px;
+    }
+    
+}
